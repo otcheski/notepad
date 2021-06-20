@@ -39,11 +39,11 @@ class Post
   # Метод, возвращающий путь к файлу, куда записывать этот объект
   def file_path
     # Сохраним в переменной current_path место, откуда запустили программу
-    current_path = File.dirname(__FILE__)
+    current_path = "Data/"
 
     # Получим имя файла из даты создания поста метод strftime формирует строку типа "2014-12-27_12-08-31.txt"
     file_name = @created_at.strftime("#{self.class.name}_%Y-%m-%d_%H-%M-%S.txt")
 
-    current_path + "/" + file_name # возвращает ссыдку на файл
+    current_path + file_name # возвращает ссылку на файл
   end
 end

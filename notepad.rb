@@ -8,10 +8,10 @@ if Gem.win_platform?
 end
 
 # Подключаем класс Post и его детей: Memo, Link, Task
-require_relative 'post'
-require_relative 'memo'
-require_relative 'link'
-require_relative 'task'
+require_relative 'lib/post'
+require_relative 'lib/Memo'
+require_relative 'lib/link'
+require_relative 'lib/Task'
 
 puts 'Привет, я твой блокнот!'
 puts
